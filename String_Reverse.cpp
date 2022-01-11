@@ -2,8 +2,7 @@
 using namespace std;
 #include<string>
 
-    //1110
-    //  01
+  
 string reverse_string(string s)
 {
     int n=s.length();
