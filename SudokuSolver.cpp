@@ -1,3 +1,7 @@
+/* The board contains non zero and zero values.
+Non zero values lie in the range: [1, 9].
+Cells with zero value indicate that the particular cell is empty and can be replaced by non zero values.
+*/
 #include<bits/stdc++.h>
 #include<utility>
 using namespace std;
@@ -159,7 +163,15 @@ int main(){
     
     if(SudokuSolved())
     {
-    cout<<"true";
+  cout<<"Solved Sudoku: "<<endl;
+    for(int i=0;i<9;i++)
+    {
+        for(int j=0;j<9;j++)
+        {
+            cout<<board[i][j]<<" ";
+        }
+        cout<<endl;
+    }
     }
     else
     {
